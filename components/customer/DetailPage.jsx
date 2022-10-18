@@ -14,9 +14,7 @@ const DetailPage = () => {
            .then(() => {
              console.log("Successfully share");
            })
-           .catch(() => {
-             console.log("Something went wrong");
-           });
+           
        }
      };
 
