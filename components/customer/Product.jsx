@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import {CgShoppingCart} from 'react-icons/cg'
+import { BiTimer } from "react-icons/bi";
 
 
 const Product = () => {
@@ -120,9 +121,14 @@ const Product = () => {
                       />
                     </div>
                   </div>
-                  <div className='flex'>
-                    
-                    <p class="mt-1">GHC {item.price}</p>
+                  <div className="flex">
+                    <div className='mt-2'>
+                      <BiTimer className="" />
+                    </div>
+
+                     <p className="mt-1 mx-1"> 30-40 min</p>
+                    <p className="mt-1 mx-1"> - </p>
+                    <p class="mt-1"> GHC {item.price} </p>
                   </div>
                 </div>
               </div>
