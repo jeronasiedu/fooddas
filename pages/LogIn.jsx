@@ -6,12 +6,11 @@ const LogIn = () => {
 
   return (
     <div className=''>
-        <div className='bg-gray-200  shadow-xl py-2 px-4 fixed w-full'>
+        <div className='bg-white  shadow-xl py-2 px-4 fixed w-full'>
             <img src="./logo.png" alt="" className='w-40 h-10 p-1' />
         </div>
       <div
-        class="h-full  w-full py-[80px] px-4 back"
-      >
+        class="h-full  w-full py-[80px] px-4 back"> 
         <div class="flex flex-col items-center justify-center">
           <div class="bg-white shadow rounded lg:w-1/3  md:w-1/2 w-full p-10 mt-[50px]">
             <p
@@ -35,7 +34,7 @@ const LogIn = () => {
             <button
               aria-label="Continue with google"
               role="button"
-              class="focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-gray-700 py-3.5 px-4 border rounded-lg border-gray-700 flex items-center w-full mt-10"
+              class="focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-gray-700 py-3.5 px-4 border rounded-lg border-gray-700 flex hover:bg-gray-100 items-center w-full mt-10"
             >
               <img
                 src="https://tuk-cdn.s3.amazonaws.com/can-uploader/sign_in-svg2.svg"
@@ -64,7 +63,7 @@ const LogIn = () => {
               <input
                 aria-labelledby="email"
                 type="email"
-                class="bg-gray-200 border rounded  text-xs font-medium leading-none text-gray-800 py-3 w-full pl-3 mt-2"
+                class="bg-gray-200 border rounded  text-md font-medium leading-none text-gray-800 py-3 w-full pl-3 mt-2"
               />
             </div>
             <div class="mt-6  w-full">
@@ -78,7 +77,7 @@ const LogIn = () => {
                 <input
                   id="pass"
                   type="password"
-                  class="bg-gray-200 border rounded  text-xs font-medium leading-none text-gray-800 py-3 w-full pl-3 mt-2"
+                  class="bg-gray-200 border rounded  text-sm font-medium leading-none text-gray-800 py-3 w-full pl-3 mt-2"
                 />
                 <div class="absolute right-0 mt-2 mr-3 cursor-pointer">
                   <img
@@ -91,9 +90,8 @@ const LogIn = () => {
             <div class="mt-8">
               <button
                 role="button"
-                class="focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 text-sm font-semibold leading-none text-white focus:outline-none bg-indigo-700 border rounded hover:bg-indigo-600 py-4 w-full"
-              >
-                Log In
+                class="focus:ring-2 focus:ring-offset-2 focus:ring-red-700 text-sm font-semibold leading-none text-white focus:outline-none bg-red-500 border rounded hover:bg-red-600 py-4 w-full"
+              > Log In
               </button>
             </div>
           </div>
