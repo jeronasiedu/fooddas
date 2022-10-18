@@ -11,9 +11,7 @@ const DetailPage = () => {
              text: "If you don't by this I will kill you",
              url: "",
            })
-           .then(() => {
-             console.log("Successfully share");
-           })
+           
            
        }
      };
