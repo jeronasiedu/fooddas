@@ -1,11 +1,11 @@
 
+import ModalCart from "../components/customer/ModalCart"
 import Navbar from "../components/customer/Navbar"
-import DetailPage from "../components/customer/DetailPage"
 const Home = () => {
   return (
     <div>
       <Navbar/>
-      <DetailPage/>
+     <ModalCart/>
     </div>
   )
 }

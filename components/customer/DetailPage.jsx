@@ -1,20 +1,8 @@
 import {FiShare2} from 'react-icons/fi' 
 import {BsStarFill} from 'react-icons/bs'
-
+import { useState } from 'react';
 const DetailPage = () => {
-     const handleShare = () => {
     
-       if (navigator.share) {
-         navigator
-           .share({
-             title: "Please buy this food for me",
-             text: "If you don't by this I will kill you",
-             url: "",
-           })
-           
-           
-       }
-     };
 
   return (
     <div>
@@ -57,8 +45,8 @@ const DetailPage = () => {
                 </span>
                 <button class="flex ml-auto text-white bg-red-500 border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded">
                   Add to cart
-                </button>
-                <button class="rounded-full w-10 h-10 bg-gray-200 p-0 border-0 inline-flex items-center justify-center text-gray-500 ml-4" onClick={handleShare}>
+         </button>
+                <button class="rounded-full w-10 h-10 bg-gray-200 p-0 border-0 inline-flex items-center justify-center text-gray-500 ml-4">
                   <FiShare2 />
                 </button>
               </div>
