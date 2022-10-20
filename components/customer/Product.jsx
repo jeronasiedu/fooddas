@@ -1,94 +1,13 @@
 import { useState } from 'react'
 import {CgShoppingCart} from 'react-icons/cg'
 import { BiTimer } from "react-icons/bi";
+import Link from 'next/link';
+import { data } from '../../data/data';
 
 
 const Product = () => {
-    const food = [
-      {
-        id: 1,
-        name: "Pizza",
-        price: 10,
-        image: "./food.jpg",
-        vendor: "Tasty Queen Kitchen.",
-        category: "dinner",
-        location:"Kumasi",
-      },
-      {
-        id: 2,
-        name: "Burger",
-        price: 10,
-        image: "./food.jpg",
-        vendor: "Sweet Mummy's Kitchen",
-        category: "dinner",
-        location:"Kumasi",
-      },
-      {
-        id: 3,
-        name: "Pizza",
-        price: 10,
-        image: "./food.jpg",
-        vendor: "Pizzaman' Kitchen",
-        category: "dinner",
-        location:"Accra",
-      },
-      {
-        id: 4,
-        name: "Hausa Koko",
-        price: 10,
-        image: "./food.jpg",
-        vendor: "Hajia's Breakfast Hub",
-        category: "breakfast",
-        location:"Kumasi",
-
-      },
-      {
-        id: 5,
-        name: "Banku with Tilapia",
-        price: 10,
-        image: "./food.jpg",
-        vendor: "Rachael B's Kitchen",
-        category: "lunch",
-        location:"Kumasi",
-
-      },
-      {
-        id: 6,
-        name: "Pizza",
-        price: 10,
-        image: "./food.jpg",
-        vendor: "Rachael B's Kitchen",
-        category: "lunch",
-        location:"Accra"
-      },
-      {
-        id: 7,
-        name: "Pizza",
-        price: 10,
-        image: "./food.jpg",
-        vendor: "Rachael B's Kitchen",
-        category: "lunch",
-        location:"Accra"
-      },
-      {
-        id: 8,
-        name: "Pizza",
-        price: 10,
-        image: "./food.jpg",
-        vendor: "Rachael B's Kitchen",
-        category: "lunch",
-        location:"Accra"
-      },
-      {
-        id: 9,
-        name: "Pizza",
-        price: 10,
-        image: "./food.jpg",
-        vendor: "Rachael B's Kitchen",
-        category: "lunch",
-        location:"Accra"
-      },
-    ];
+  const [food, setFood] = useState(data);
+   
 
 
 
@@ -98,7 +17,7 @@ const Product = () => {
         <div class="container px-5 py-24 mx-auto">
           <div class="flex flex-wrap -m-4">
             {food.map((item) => (
-              <div class="lg:w-1/4 md:w-1/2 p-4   w-full  ">
+              <div class="lg:w-1/4 md:w-1/2 p-4   w-full  " key={item.id}>
                 <a class="block relative h-48  overflow-hidden rounded-t-md">
                   <img
                     alt="ecommerce"
@@ -115,18 +34,20 @@ const Product = () => {
                       {item.name}
                     </h2>
                     <div className="rounded-full border p-1 border-red-400 hover:border-red-700  duration-200">
-                      <CgShoppingCart
-                        size={25}
-                        className="text-red-400 m-1   hover:text-red-700"
-                      />
+                    <Link href={'/food/' + item.id} key={item.id}>
+                        <CgShoppingCart
+                          size={25}
+                          className="text-red-400 m-1   hover:text-red-700"
+                        />
+                      </Link>
                     </div>
                   </div>
                   <div className="flex">
-                    <div className='mt-2'>
+                    <div className="mt-2">
                       <BiTimer className="" />
                     </div>
 
-                     <p className="mt-1 mx-1"> 30-40 min</p>
+                    <p className="mt-1 mx-1"> 30-40 min</p>
                     <p className="mt-1 mx-1"> - </p>
                     <p class="mt-1"> GHC {item.price} </p>
                   </div>
