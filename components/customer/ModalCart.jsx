@@ -1,10 +1,7 @@
-
-
-const ModalCart = ({show, onClose}) => {
-  if(!open) {
-    return null;
+const ModalCart = ({ show, onClose }) => {
+  if (!open) {
+    return null
   }
-
 
   return (
     <div className="">
@@ -134,7 +131,7 @@ const ModalCart = ({show, onClose}) => {
                       <p>Delivery fee</p>
                       <p>$2.00</p>
                     </div>
-                   
+
                     <div class="flex justify-between text-base font-medium text-gray-900">
                       <p>Total</p>
                       <p>$262.00</p>
@@ -168,7 +165,7 @@ const ModalCart = ({show, onClose}) => {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 export default ModalCart

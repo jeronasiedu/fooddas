@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react"
 
 const Adsection = () => {
   return (
@@ -7,7 +7,7 @@ const Adsection = () => {
         <div className="p-3 pt-10">
           <h2 className="  text-4xl ml-3">
             <span className="font-extrabold"> Food</span> You Loved <br />
-            Delivered <span className='font-bold'>To You.</span>
+            Delivered <span className="font-bold">To You.</span>
           </h2>
         </div>
         <div className="w-2/3 md:w-1/3  mr-7 flex   items-center md:pt-5 md:m-2 ">
@@ -15,7 +15,7 @@ const Adsection = () => {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 export default Adsection

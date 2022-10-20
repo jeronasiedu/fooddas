@@ -1,9 +1,6 @@
-import {FiShare2} from 'react-icons/fi' 
-import {BsStarFill} from 'react-icons/bs'
-import { useState } from 'react';
+import { BsStarFill } from "react-icons/bs"
+import { FiShare2 } from "react-icons/fi"
 const DetailPage = () => {
-    
-
   return (
     <div>
       <div class="text-gray-600 body-font overflow-hidden">
@@ -30,7 +27,6 @@ const DetailPage = () => {
                     ))}
                   <span class="text-gray-600 ml-3">5 Reviews</span>
                 </span>
-               
               </div>
               <p class="leading-relaxed">
                 Fam locavore kickstarter dis microdosing tilde DIY. XOXO fam
@@ -45,7 +41,7 @@ const DetailPage = () => {
                 </span>
                 <button class="flex ml-auto text-white bg-red-500 border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded">
                   Add to cart
-         </button>
+                </button>
                 <button class="rounded-full w-10 h-10 bg-gray-200 p-0 border-0 inline-flex items-center justify-center text-gray-500 ml-4">
                   <FiShare2 />
                 </button>
@@ -55,7 +51,7 @@ const DetailPage = () => {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 export default DetailPage

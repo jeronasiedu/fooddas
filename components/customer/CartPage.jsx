@@ -1,14 +1,8 @@
-
-
-
-
-
-
 const CartPage = () => {
-    const [show, setShow] = useState(false);
+  const [show, setShow] = useState(false)
   return (
     <div>
-<div>
+      <div>
         <div className="flex items-center justify-center py-8">
           <button
             onClick={() => setShow(!show)}
@@ -253,7 +247,3 @@ const CartPage = () => {
 }
 
 export default CartPage
-
-
-
-
